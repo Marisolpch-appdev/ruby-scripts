@@ -8,6 +8,10 @@ task :example_input_from_file do
 end
 
 desc "Create a new input file and read from it"
-task :your_own_input_from_file do
+task :my_own_input_file do
+  path_to_file = Rails.root + "lib/input_files/my_own_input_file.txt"
+  ap(path_to_file)
 
+  my_own_input_file = open(path_to_file).read
+  ap(my_own_input_file)
 end

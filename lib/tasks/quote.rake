@@ -55,4 +55,6 @@ task :quote do
   # Your code goes below.
   # =====================================================================
 
+  puts quotations.sample 
+
 end
